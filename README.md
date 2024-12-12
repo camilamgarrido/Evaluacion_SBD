@@ -17,7 +17,7 @@ Asegúrate de tener instaladas las siguientes dependencias:
 Puedes instalar las dependencias con el siguiente comando:
 
 ```bash
-pip install requests pymongo pandas pyarrow
+pip install requests pymongo pandas pyarrow```
 
 
 ## Scripts
@@ -26,7 +26,7 @@ Este script se conecta a una API a intervalos regulares (por defecto, cada 1 min
 #### Ejecución: Para ejecutar el script, simplemente corre el siguiente comando en tu terminal:
 
 ```bash
-python script1.py
+python script1.py```
 
 El script comenzará a obtener los datos de la API y a almacenarlos en la base de datos MongoDB de forma continua.
 
