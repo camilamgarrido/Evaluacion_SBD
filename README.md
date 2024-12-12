@@ -15,12 +15,14 @@ Asegúrate de tener instaladas las siguientes dependencias:
   - `pymongo`
   - `pandas`
   - `pyarrow` (para trabajar con el formato Parquet)
-- Debes crear un docker con la imagen de mongo:  mongo docker run --name mongoBicis -d -p 27017:27017 mongo
+
 
 Puedes instalar las dependencias con el siguiente comando:
 
 pip install requests pymongo pandas pyarrow
 
+## En docker desktop puedes crear el docker de mongoBD para poder trabajar:
+Debes crear un docker con la imagen de mongo:  mongo docker run --name mongoBicis -d -p 27017:27017 mongo
 
 ## Scripts
 ## Script 1: Obtención y almacenamiento de datos en MongoDB
