@@ -19,7 +19,7 @@ Asegúrate de tener instaladas las siguientes dependencias:
 
 Puedes instalar las dependencias con el siguiente comando:
 
-pip install requests pymongo pandas pyarrow
+> pip install requests pymongo pandas pyarrow
 
 ## En docker desktop puedes crear el docker de mongoBD para poder trabajar:
 Debes crear un docker con la imagen de mongo:  mongo docker run --name mongoBicis -d -p 27017:27017 mongo
@@ -30,7 +30,7 @@ Este script se conecta a una API a intervalos regulares (por defecto, cada 1 min
 #### Ejecución: Para ejecutar el script, simplemente corre el siguiente comando en tu terminal:
 
 
-python script1.py
+> python script1.py
 
 El script comenzará a obtener los datos de la API y a almacenarlos en la base de datos MongoDB de forma continua.
 
@@ -40,7 +40,7 @@ Este script lee los datos almacenados en MongoDB y los carga en un dataframe de 
 #### Ejecución: Para ejecutar el script y exportar los datos a los formatos solicitados, usa el siguiente comando:
 
 
-python script2.py
+> python script2.py
 
 El script:
 
