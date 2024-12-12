@@ -8,11 +8,14 @@ Asegúrate de tener instaladas las siguientes dependencias:
 
 - Python 3.x
 - MongoDB en ejecución
+- Docker desktop
+  
 - Las siguientes bibliotecas de Python:
   - `requests`
   - `pymongo`
   - `pandas`
   - `pyarrow` (para trabajar con el formato Parquet)
+- Debes crear un docker con la imagen de mongo:  mongo docker run --name mongoBicis -d -p 27017:27017 mongo
 
 Puedes instalar las dependencias con el siguiente comando:
 
