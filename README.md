@@ -17,7 +17,7 @@ Asegúrate de tener instaladas las siguientes dependencias:
 Puedes instalar las dependencias con el siguiente comando:
 
 ```bash
-pip install requests pymongo pandas pyarrow```
+pip install requests pymongo pandas pyarrow ```
 
 
 ## Scripts
