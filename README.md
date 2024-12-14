@@ -60,7 +60,7 @@ Parquet: Los datos se exportarán a un archivo .parquet.
 Este ejercicio de integración con una API y almacenamiento de datos en MongoDB ha proporcionado una comprensión práctica de cómo interactuar con una API, procesar los datos obtenidos y almacenarlos en una base de datos MongoDB.
 
 
-# Ejercicio avanzado
+💡# Ejercicio avanzado 💡
 
 Una vez en la carpeta avanzado Para dockerizar este script, utiliza el archivo Dockerfile incluido en el proyecto.
 
