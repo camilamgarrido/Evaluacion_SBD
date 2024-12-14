@@ -31,7 +31,7 @@ Puedes instalar las dependencias con el siguiente comando:
 Debes crear un docker con la imagen de mongo:  mongo docker run --name mongoBicis -d -p 27017:27017 mongo
 
 ## Script 1: Obtención y almacenamiento de datos en MongoDB
-## conexionAPI.py
+### conexionAPI.py
 Este script se conecta a una API a intervalos regulares (por defecto, cada 1 minutos) y almacena los datos obtenidos en una base de datos MongoDB. La ejecución del script continuará indefinidamente hasta que se cancele manualmente.
 #### Ejecución: Para ejecutar el script, simplemente corre el siguiente comando en tu terminal:
 
@@ -40,7 +40,7 @@ Este script se conecta a una API a intervalos regulares (por defecto, cada 1 min
 El script comenzará a obtener los datos de la API y a almacenarlos en la base de datos MongoDB de forma continua.
 
 ## Script 2: Lectura y exportación de datos desde MongoDB
-## exportarDataframe.py
+### exportarDataframe.py
 Este script lee los datos almacenados en MongoDB y los carga en un dataframe de Pandas. Luego, permite exportar los datos en los formatos CSV y Parquet. El script se ejecuta por demanda, lo que significa que puedes correrlo en cualquier momento para obtener los datos.
 #### Ejecución: Para ejecutar el script y exportar los datos a los formatos solicitados, usa el siguiente comando:
 
