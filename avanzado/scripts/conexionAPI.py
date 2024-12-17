@@ -4,7 +4,7 @@ import schedule
 import time
 from datetime import datetime
 
-# Conexión a MongoDB
+# Conexión a  MongoDB
 def get_mongo_client():
     try:
         # Conectar al contenedor o servidor de MongoDB
