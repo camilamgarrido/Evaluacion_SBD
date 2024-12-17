@@ -1,7 +1,6 @@
 import pandas as pd
 import pymongo
 
-# Conexión a MongoDB
 def get_mongo_client():
     try:
         client = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -10,21 +9,17 @@ def get_mongo_client():
         print(f"Error de conexión con MongoDB: {e}")
         return None
 
-# Intentar reconectar si no hay conexión
 client = get_mongo_client()
 if client:
     db = client["bicicorunha_db"]
     collection = db["data"]
 else:
-    print("No se pudo conectar a MongoDB.")
+    print("No se pudo conectar a MongoDB, saíndo.")
     exit(1)
 
-# Leer datos desde MongoDB y exportar
 try:
-    # Leer datos desde MongoDB
     documents = collection.find()
 
-    # Transformar los documentos en una lista de diccionarios
     data = []
     for doc in documents:
         for station in doc['network']['stations']:
@@ -41,16 +36,13 @@ try:
                 "ebikes": station.get("extra", {}).get("ebikes")
             })
 
-    # Crear el DataFrame
     df = pd.DataFrame(data)
 
     if not df.empty:
-        # Exportar a CSV
         csv_filename = "bicicorunha_data.csv"
         df.to_csv(csv_filename, index=False)
         print(f"Datos exportados correctamente a {csv_filename}")
 
-        # Exportar a Parquet
         parquet_filename = "bicicorunha_data.parquet"
         df.to_parquet(parquet_filename, index=False)
         print(f"Datos exportados correctamente a {parquet_filename}")
