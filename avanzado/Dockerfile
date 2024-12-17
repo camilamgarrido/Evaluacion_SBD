@@ -11,4 +11,4 @@ COPY ./scripts /scripts
 RUN pip install pymongo pandas requests schedule
 
 # Definir el comando por defecto para ejecutar los scripts
-CMD ["python3", "conexionAPI.py"]
+CMD ["python3", "conexionapi.py"]
