@@ -64,12 +64,12 @@ Este ejercicio de integración con una API y almacenamiento de datos en MongoDB 
 
 
 
-# 💡Ejercicio avanzado 
+# 📁 Ejercicio avanzado (carpeta avanzado)
 
 Una vez en la carpeta avanzado Para dockerizar este script, utiliza el archivo Dockerfile incluido en el proyecto.
 
 ### Construcción de la Imagen Docker
-Ejecuta el siguiente comando en la terminal para construir la imagen Docker:
+Ejecuta el siguiente comando en la terminal para la imagen Docker:
 
 > docker build -t conexionapi .
 
@@ -81,6 +81,10 @@ Una vez que el servidor MongoDB esté en funcionamiento, puedes utilizar el scri
 Ejecuta el siguiente comando para ejecutar el script:
 
 > python script2.py
+
+### Publicar la imagen de docker en github
+
+[https://hub.docker.com/u/camilamarinovic](https://hub.docker.com/u/camilamarinovic)
 
 ## Conclusión
 
