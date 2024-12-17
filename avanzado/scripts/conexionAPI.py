@@ -14,7 +14,7 @@ def get_mongo_client():
         print(f"Error de conexión con MongoDB: {e}")
         return None
 
-# Conectar a MongoDB
+# Conectar a  MongoDB
 client = get_mongo_client()
 
 if client:
